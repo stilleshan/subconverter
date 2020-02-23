@@ -1,8 +1,8 @@
 # subconverter
 ## 简介
-subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy2013/subconverter) 项目的修改版本.仅修改 **pref.ini** 配置以解决以下两点问题.相关使用方法请参考原始项目.
+subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy2013/subconverter) 项目的修改版本.仅修改 **分组配置文件** 以解决以下两点问题.相关使用方法请参考原始项目.
 
-- **去除**`自动选择url-test`以解决连接数爆涨问题.
+- **去除**`自动选择 url-test`以解决连接数爆涨问题.
 - **全球拦截** 增加`节点选择`,以解决`Google Analytics`的访问需求.
 
 ## 部署
@@ -10,7 +10,8 @@ subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy20
 ```shell
 docker run  -d --name=subconverter --restart=always -p 25500:25500 stilleshan/subconverter
 ```
-> 如需自定义 **pref.ini** 配置,可自行加 **-v ~/pref.ini:/base/pref.ini** 参数.
+> 如需自定义分组配置,可挂载 **-v ~/groups.txt:/base/snippets/groups.txt** 参数.  
+v0.2.6 - v0.3.0 版本如需自定义分组配置,可挂载 **-v ~/pref.ini:/base/pref.ini** 参数.
 
 ### 免费提供订阅转换地址
 具体使用教程请参考原版 [tindy2013/subconverter](https://github.com/tindy2013/subconverter)  项目,本免费托管服务版本可访问以下链接查看.
