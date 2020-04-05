@@ -1,7 +1,7 @@
 FROM alpine:3.8
 MAINTAINER Stille <stille@ioiox.com>
 
-ENV VERSION v0.4.4
+ENV VERSION v0.5.0
 
 WORKDIR /base
 RUN apk add wget && \
