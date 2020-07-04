@@ -4,6 +4,8 @@ subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy20
 
 - **去除**`自动选择 url-test`以解决连接数爆涨问题.
 - **全球拦截** 增加`节点选择`,以解决`Google Analytics`的访问需求.
+- **支持老版本内核** 支持 Clash 老版本内核
+- **修改时区** 镜像默认时区为 Asia/Shanghai
 
 ## 部署
 ### docker 部署
