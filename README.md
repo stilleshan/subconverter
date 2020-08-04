@@ -1,10 +1,9 @@
 # subconverter
 ## 简介
-subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy2013/subconverter) 项目的修改版本.仅修改 **分组配置文件** 以解决以下两点问题.相关使用方法请参考原始项目.
+subconverter 是基于原版 [[tindy2013/subconverter]](https://github.com/tindy2013/subconverter) 项目的修改版本.仅修改 **分组配置文件** 以解决以下问题.相关使用方法请参考官方项目.
 
 - **去除**`自动选择 url-test`以解决连接数爆涨问题.
 - **全球拦截** 增加`节点选择`,以解决`Google Analytics`的访问需求.
-- **支持老版本内核** 支持 Clash 老版本内核
 - **修改时区** 镜像默认时区为 Asia/Shanghai
 
 ## 部署
@@ -13,10 +12,12 @@ subconverter 是基于原版 [tindy2013/subconverter](https://github.com/tindy20
 docker run  -d --name=subconverter --restart=always -p 25500:25500 stilleshan/subconverter
 ```
 > 如需自定义分组配置,可挂载 **-v ~/groups.txt:/base/snippets/groups.txt** 参数.  
-v0.2.6 - v0.3.0 版本如需自定义分组配置,可挂载 **-v ~/pref.ini:/base/pref.ini** 参数.
 
 ### 免费提供订阅转换地址
-具体使用教程请参考原版 [tindy2013/subconverter](https://github.com/tindy2013/subconverter)  项目,本免费托管服务版本可访问以下链接查看.
+具体使用教程请参考 [[tindy2013/subconverter]](https://github.com/tindy2013/subconverter)  官方项目,本免费托管服务版本可访问以下链接查看.
+
+> 注意目前最新版 subconverter 已不再支持老版本 Clash
+
 ```shell
 https://subto.herokuapp.com/
 ```
@@ -70,4 +71,3 @@ server {
 - Docker [stilleshan/subconverter](https://hub.docker.com/r/stilleshan/subconverter)
 - 原版项目Github [tindy2013/subconverter](https://github.com/tindy2013/subconverter)
 - 原版项目docker [tindy2013/subconverter](https://hub.docker.com/r/tindy2013/subconverter)
-- ClashXR项目 [WhoJave/clashX](https://github.com/WhoJave/clashX/releases)
