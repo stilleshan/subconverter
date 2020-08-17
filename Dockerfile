@@ -1,7 +1,7 @@
 FROM alpine:3.8
 MAINTAINER Stille <stille@ioiox.com>
 
-ENV VERSION v0.6.2
+ENV VERSION v0.6.3
 
 WORKDIR /base
 RUN apk add wget tzdata && \
