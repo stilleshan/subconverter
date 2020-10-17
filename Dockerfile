@@ -1,7 +1,7 @@
 FROM alpine:3.8
 MAINTAINER Stille <stille@ioiox.com>
 
-ENV VERSION v0.6.3
+ENV VERSION v0.6.4
 
 WORKDIR /base
 RUN apk add wget tzdata && \
@@ -12,7 +12,7 @@ RUN apk add wget tzdata && \
     rm -rf subconverter_linux64.tar.gz && \
     apk del wget tzdata
 
-COPY groups.txt /base/subconverter/snippets
+COPY groups.txt rulesets.txt /base/subconverter/snippets/
 
 EXPOSE 25500
 
