@@ -2,8 +2,9 @@
 ## 简介
 subconverter 是基于原版 [[tindy2013/subconverter]](https://github.com/tindy2013/subconverter) 项目的修改版本.仅修改 **分组配置文件** 以解决以下问题.相关使用方法请参考官方项目.
 
+- **增加**`Netflix`分组
 - **去除**`自动选择 url-test`以解决连接数爆涨问题.
-- **全球拦截** 增加`节点选择`,以解决`Google Analytics`的访问需求.
+- **全球拦截** 增加`节点选择`,以满足`Google Analytics`等广告统计工具的访问需求.(新版本可能已解决此需求)
 - **修改时区** 镜像默认时区为 Asia/Shanghai
 
 ## 部署
@@ -11,19 +12,15 @@ subconverter 是基于原版 [[tindy2013/subconverter]](https://github.com/tindy
 ```shell
 docker run  -d --name=subconverter --restart=always -p 25500:25500 stilleshan/subconverter
 ```
-> 如需自定义分组配置,可挂载 **-v ~/groups.txt:/base/snippets/groups.txt** 参数.  
 
 ### 免费提供订阅转换地址
-具体使用教程请参考 [[tindy2013/subconverter]](https://github.com/tindy2013/subconverter)  官方项目,本免费托管服务版本可访问以下链接查看.
-
-> 注意目前最新版 subconverter 已不再支持老版本 Clash
-
 ```shell
 https://subto.herokuapp.com/
 ```
+具体使用教程请参考 [[tindy2013/subconverter]](https://github.com/tindy2013/subconverter)  官方项目
 
 ## Nginx反向代理
-配置Nginx反向代理来为接口链接提供域名和HTTPS支持.配置参考如下,请自行替换`域名`和`证书`信息.
+配置Nginx反向代理来为接口链接提供域名和 HTTPS 支持.配置参考如下,请自行替换`域名`和`证书`信息.
 
 ```nginx
 upstream subconverter { 
