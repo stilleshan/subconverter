@@ -7,6 +7,9 @@ subconverter 是基于原版 [[tindy2013/subconverter]](https://github.com/tindy
 - **全球拦截** 增加`节点选择`,以满足`Google Analytics`等广告统计工具的访问需求.(新版本可能已解决此需求)
 - **修改时区** 镜像默认时区为 Asia/Shanghai
 
+## 更新
+**2021-05-29** 更新从`0.6.4`版本起 docker 镜像同时支持 X86 和 ARM
+
 ## 部署
 ### docker 部署
 ```shell

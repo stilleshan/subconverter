@@ -1,7 +1,7 @@
 FROM tindy2013/subconverter
 MAINTAINER Stille <stille@ioiox.com>
 
-ENV VERSION v0.6.4
+ENV VERSION 0.6.4
 
 WORKDIR /base
 RUN apk add tzdata && \
