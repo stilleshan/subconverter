@@ -8,7 +8,8 @@
 - **修改时区** 镜像默认时区为 Asia/Shanghai
 
 ## 更新
-**2021-06-09** 更新`v0.6.4`版 docker 镜像,新增同时支持 X86 和 ARM 架构.
+- **2021-09-21** 更新`v0.7.0`版 docker 镜像
+- **2021-06-09** 更新`v0.6.4`版 docker 镜像,新增同时支持 X86 和 ARM 架构.
 
 ## 部署
 ### docker
@@ -31,4 +32,3 @@ https://subto.herokuapp.com
 
 ## 参考
 GitHub [tindy2013/subconverter](https://github.com/tindy2013/subconverter)
-
