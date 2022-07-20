@@ -1,5 +1,5 @@
-FROM tindy2013/subconverter:0.7.2
-MAINTAINER Stille <stille@ioiox.com>
+FROM tindy2013/subconverter
+LABEL maintainer="Stille <stille@ioiox.com>"
 
 ENV VERSION 0.7.2
 
@@ -10,6 +10,7 @@ RUN apk add tzdata && \
     apk del tzdata
 
 COPY groups.txt rulesets.txt /base/snippets/
+COPY pref.yml /base
 
 EXPOSE 25500
 
